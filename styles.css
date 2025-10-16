@@ -157,6 +157,27 @@ a:hover { text-decoration: underline; }
   content: "✔"; position: absolute; left: 0; top: .05rem; color: var(--leaf-400); font-weight: 700;
 }
 
+/* About */
+.about .about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 2rem;
+  align-items: center;
+}
+.about .about-text { font-size: clamp(1rem, 1.1vw, 1.1rem); }
+.about .about-photo { margin: 0; }
+.about .about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px) {
+  .about .about-grid { grid-template-columns: 1fr; }
+  .about .about-photo { margin-top: 1rem; }
+}
+
 /* Contact */
 .contact-inner { display:grid; place-items:center; }
 .contact-card {
