@@ -184,6 +184,23 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+.about .about-grid > h2,
+.about .about-grid > h4 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+.about .about-grid > h4 a {
+  color: var(--text-100);
+}
+.about .about-grid > img {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  border-radius: var(--radius);
+  margin-top: .3rem;
+}
+.about .about-grid > h2 {
+  margin-top: 1rem;
+}
 
 @media (max-width: 900px) {
   .about .about-grid { grid-template-columns: 1fr; }
