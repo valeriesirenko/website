@@ -203,8 +203,11 @@ a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 900px) {
-  .about .about-grid { grid-template-columns: 1fr; }
+  .about .about-grid { grid-template-columns: 1fr; gap: 1rem; }
   .about .about-photo { margin-top: 1rem; }
+  .about .about-grid > img { max-width: 100%; }
+  .about .about-grid > h2,
+  .about .about-grid > h4 { word-wrap: break-word; }
 }
 
 /* Contact */
