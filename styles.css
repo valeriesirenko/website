@@ -146,6 +146,18 @@ a:hover { text-decoration: underline; }
   content: ""; position:absolute; inset:0;
   background: linear-gradient(180deg, rgba(0,0,0,.0) 40%, rgba(0,0,0,.3));
 }
+.story-title {
+  font-family: Lora, Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.project-body > p:has(.story-title) {
+  margin-bottom: 1.8rem;
+}
+
 .project-media figcaption {
   position:absolute; left: .8rem; bottom: .6rem; font-size: .8rem; color: rgba(255,255,255,.8);
 }
