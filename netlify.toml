@@ -1,0 +1,9 @@
+# The site is plain static files at the repo root, so there is no build step.
+# Netlify still runs `npm install` because package.json exists, which is how
+# the /just-listed function gets its @netlify/blobs dependency.
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

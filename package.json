@@ -1,0 +1,10 @@
+{
+  "name": "valeriesirenko-website",
+  "version": "1.0.0",
+  "description": "valeriesirenko.com — static site plus the /just-listed redirect counter",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^10.7.13"
+  }
+}
