@@ -133,6 +133,12 @@ a:hover { text-decoration: underline; }
 }
 .project-body { font-size: clamp(1rem, 1.2vw, 1.12rem); line-height: 1.7; }
 .project-body h3 { font-size: clamp(1.3rem, 2.6vw, 1.9rem); margin: 0 0 .6rem 0; }
+.projects .project-stacked { grid-template-columns: 1fr; }
+.project-stacked .project-media {
+  width: min(100%, 36rem);
+  aspect-ratio: 3 / 4;
+  margin: 0 auto 1rem;
+}
 .project-media {
   aspect-ratio: 4 / 5; border-radius: var(--radius);
   background: var(--bg-700);
